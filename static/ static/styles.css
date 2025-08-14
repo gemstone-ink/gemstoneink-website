@@ -1,0 +1,29 @@
+
+:root { --bg:#0f0f10; --fg:#eaeaea; --muted:#b7b7b7; --brand:#ffcc00; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+a{color:var(--fg);text-decoration:none}
+.container{max-width:1080px;margin:0 auto;padding:16px}
+nav{position:sticky;top:0;background:#141416;border-bottom:1px solid #232325;z-index:10}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700}
+.brand .logo{width:28px;height:28px;border-radius:6px;background:linear-gradient(145deg,#2a2a2c,#1a1a1b);border:1px solid #303033}
+.brand .text{letter-spacing:.2px}
+.nav-links{display:flex;gap:14px;font-weight:500}
+.nav-links a{opacity:.9}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:20px;align-items:center;padding:32px 16px}
+.hero h1{font-size:28px;line-height:1.25;margin:.2em 0}
+.hero .copy p{color:var(--muted)}
+.hero .image img{width:100%;border-radius:12px;border:1px solid #2b2b2e;display:block;background:#222}
+button{padding:10px 14px;border-radius:10px;border:1px solid #2b2b2e;background:#1a1a1c;color:var(--fg);font-weight:600}
+button.primary{background:var(--brand);color:#222;border-color:#d6af00}
+button.ghost{background:transparent}
+.badge{display:inline-block;padding:6px 10px;border:1px solid #2b2b2e;border-radius:999px;font-size:12px;opacity:.9}
+.section{padding:36px 0;border-top:1px solid #1f1f21}
+h2{font-size:22px;margin:0 0 12px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{padding:14px;border:1px solid #28282b;border-radius:12px;background:#141416}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px;border:1px solid #2b2b2e;background:#222}
+.footer{border-top:1px solid #232325;padding:18px 0;margin-top:18px}
+@media (max-width:760px){ .hero{grid-template-columns:1fr} }
